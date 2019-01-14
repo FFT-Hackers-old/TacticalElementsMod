@@ -14,7 +14,7 @@ PFNRUNANIMSCRIPT* oldRunAnimationScript;
 PFNDECREMENTCOUNTERS* oldDecrementCounters;
 PFNAPPLYDAMAGE*  oldApplyDamage;
 
-__declspec(dllexport) void ModMain(const void* unused)
+__declspec(dllexport) void ModMain(PFNSRLOADFUNCTIONPROC srLoadFunction)
 {
 	srReplaceFunction = srLoadFunction("srReplaceFunction");
 	srRedirectFunction = srLoadFunction("srRedirectFunction");
