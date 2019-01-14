@@ -23,4 +23,4 @@ void handleInflictBleed(u32 target_id);
 void handleLightingArc(u32 target_id);
 void handleInflictFloat(u32 target_id);
 
-#endif ELEMENTAL_HEADER_H
+#endif
