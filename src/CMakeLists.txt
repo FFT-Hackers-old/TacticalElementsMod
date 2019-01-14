@@ -1,4 +1,3 @@
-file(GLOB_RECURSE SOURCES "*.c" "*.h")
-add_library(TacticalElements SHARED ${SOURCES})
+add_subdirectory(tactical_elements)
 target_include_directories(TacticalElements PRIVATE "${CMAKE_SOURCE_DIR}/include")
 set_target_properties(TacticalElements PROPERTIES OUTPUT_NAME TacticalElements)

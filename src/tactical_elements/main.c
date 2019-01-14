@@ -18,8 +18,8 @@ __declspec(dllexport) void ModMain(PFNSRLOADFUNCTIONPROC srLoadFunction)
 {
 	srReplaceFunction = srLoadFunction("srReplaceFunction");
 	srRedirectFunction = srLoadFunction("srRedirectFunction");
-
 	MessageBoxA(NULL, "Loading FFVII tactical elements mod", 0, 0);
+
 	oldCommandMain = srRedirectFunction(MAIN_COMMAND_FORMULA, &CommandMainRewrite);
 	oldRunAnimationScript = srRedirectFunction(RUN_ANIMATION_SCRIPT, &AnimationScriptRewrite);
 	oldDecrementCounters = srRedirectFunction(DECREMENT_COUNTERS, &DecrementCountersRewrite);

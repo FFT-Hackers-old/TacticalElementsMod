@@ -1,0 +1,2 @@
+add_library(TacticalElements SHARED "command_mechanics.h" "command_mechanics.cpp" "damage_formulas.h" "damage_formulas.cpp" "elemental_modifiers.h" "elemental_modifiers.cpp" 
+			"elemental_status_infliction.cpp" "utils.h" "utils.cpp" "impl.h" "main.c")
