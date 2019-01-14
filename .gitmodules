@@ -1,0 +1,3 @@
+[submodule "vendor/SisterRay"]
+	path = vendor/SisterRay
+	url = git@github.com:FFT-Hackers/SisterRay.git
